@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "question": "Projeleriniz hakkında nasıl bilgi alabilirim?",
+      "answer": "Güncel projelerimizi Projelerimiz sayfasından inceleyebilir, her projenin detay sayfasındaki bilgileri görüntüleyebilirsiniz. Daha fazla bilgi için bizimle telefon veya e-posta yoluyla iletişime geçebilirsiniz."
+    },
+    {
+      "question": "Konut satın alma süreci nasıl ilerliyor?",
+      "answer": "Öncelikle ihtiyaçlarınızı ve ilgilendiğiniz projeyi birlikte değerlendiriyoruz. Ardından uygun seçenekler, konut özellikleri ve satış koşulları hakkında bilgi paylaşıyoruz. Detaylar netleştiğinde sözleşme ve satın alma adımları karşılıklı olarak yürütülüyor."
+    },
+    {
+      "question": "Ödeme planları ve taksit seçenekleri nelerdir?",
+      "answer": "Ödeme koşulları projeye, konut tipine ve dönemsel kampanyalara göre değişebilir. Size en doğru ve güncel bilgiyi verebilmemiz için ilgilendiğiniz proje üzerinden satış ekibimizle görüşebilirsiniz."
+    },
+    {
+      "question": "Projelerinizi yerinde görebilir miyiz?",
+      "answer": "Proje alanı ziyaretleri için önceden bizimle iletişime geçerek randevu oluşturabilirsiniz. Ziyaretler, saha güvenliği ve projenin mevcut çalışma koşulları dikkate alınarak planlanır."
+    },
+    {
+      "question": "Devam eden projelerin teslim tarihlerini nereden öğrenebilirim?",
+      "answer": "Teslim takvimi her projeye göre farklılık gösterir. İlgilendiğiniz projenin güncel durumu ve öngörülen teslim süreci hakkında ekibimizden bilgi alabilirsiniz."
+    },
+    {
+      "question": "Projelerde kullanılan malzeme ve teknik özellikleri öğrenebilir miyim?",
+      "answer": "Yapı malzemeleri ve teknik özellikler proje bazında belirlenir. İlgilendiğiniz projeye ait teknik detayları ve mevcut bilgileri talep ettiğinizde sizinle paylaşabiliriz."
+    },
+    {
+      "question": "Şirketinizle nasıl iletişime geçebilirim?",
+      "answer": "Bize 0332 322 50 20 numaralı telefondan veya cnkcankurtyapi@gmail.com e-posta adresinden ulaşabilirsiniz. Ofisimiz Araplar Mahallesi, Fetih Caddesi No:30/C, Karatay / Konya adresindedir."
+    }
+  ]
+}
