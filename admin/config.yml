@@ -36,7 +36,16 @@ collections:
           - { label: "Instagram", name: "instagram", widget: "string" }
           - { label: "Facebook", name: "facebook", widget: "string" }
           - { label: "YouTube", name: "youtube", widget: "string" }
+          - label: "Anasayfa İstatistikleri"
+            name: "stats"
+            widget: "object"
+            fields:
+              - { label: "Yıllık Deneyim", name: "years", widget: "number", value_type: "int" }
+              - { label: "Proje Sayısı", name: "projects", widget: "number", value_type: "int" }
+              - { label: "Mutlu Müşteri", name: "customers", widget: "number", value_type: "int" }
+              - { label: "Uzman Ekip", name: "team", widget: "number", value_type: "int" }
           - { label: "Duyuru Aktif", name: "popupActive", widget: "boolean", default: true }
+          - { label: "Duyuru Görseli", name: "popupImage", widget: "image", required: false }
           - { label: "Duyuru Başlığı", name: "popupTitle", widget: "string" }
           - { label: "Duyuru Açıklaması", name: "popupDescription", widget: "text" }
           - { label: "Kampanya 1. Satır", name: "popupOfferLine1", widget: "string" }
