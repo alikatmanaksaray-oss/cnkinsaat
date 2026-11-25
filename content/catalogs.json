@@ -1,0 +1,28 @@
+{
+  "catalogs": [
+    {
+      "title": "Steak House Restaurant",
+      "description": "Jeofood Gastronomi Merkezi / Karapınar",
+      "file": "",
+      "cover": ""
+    },
+    {
+      "title": "Çamlıyaka 45 Konutları",
+      "description": "Konut projesi kataloğu",
+      "file": "",
+      "cover": ""
+    },
+    {
+      "title": "Güvenpark Konutları",
+      "description": "Konut projesi kataloğu",
+      "file": "",
+      "cover": ""
+    },
+    {
+      "title": "CNK İnşaat Kurumsal E-Katalog",
+      "description": "Kurumsal tanıtım yayını",
+      "file": "",
+      "cover": ""
+    }
+  ]
+}
