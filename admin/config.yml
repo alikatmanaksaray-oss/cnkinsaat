@@ -1,0 +1,146 @@
+backend:
+  name: git-gateway
+  branch: main
+  squash_merges: true
+
+media_folder: "uploads"
+public_folder: "/uploads"
+site_url: "https://cnkinsaat-kiy0.netlify.app"
+display_url: "https://cnkinsaat-kiy0.netlify.app"
+publish_mode: editorial_workflow
+locale: "tr"
+
+slug:
+  encoding: "unicode"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "site"
+    label: "Site Ayarları"
+    files:
+      - name: "settings"
+        label: "Genel Bilgiler ve Duyuru"
+        file: "content/site-settings.json"
+        format: "json"
+        fields:
+          - { label: "Firma Adı", name: "companyName", widget: "string" }
+          - { label: "Slogan", name: "slogan", widget: "string" }
+          - { label: "Kuruluş Yılı", name: "founded", widget: "string" }
+          - { label: "Şehir", name: "city", widget: "string" }
+          - { label: "Telefon", name: "phone", widget: "string" }
+          - { label: "İkinci Telefon", name: "mobile", widget: "string" }
+          - { label: "E-posta", name: "email", widget: "string" }
+          - { label: "Adres", name: "address", widget: "text" }
+          - { label: "Çalışma Saatleri", name: "workingHours", widget: "string" }
+          - { label: "Instagram", name: "instagram", widget: "string" }
+          - { label: "Facebook", name: "facebook", widget: "string" }
+          - { label: "YouTube", name: "youtube", widget: "string" }
+          - { label: "Duyuru Aktif", name: "popupActive", widget: "boolean", default: true }
+          - { label: "Duyuru Başlığı", name: "popupTitle", widget: "string" }
+          - { label: "Duyuru Açıklaması", name: "popupDescription", widget: "text" }
+          - { label: "Kampanya 1. Satır", name: "popupOfferLine1", widget: "string" }
+          - { label: "Kampanya 2. Satır", name: "popupOfferLine2", widget: "string" }
+          - { label: "Duyuru Bağlantısı", name: "popupLink", widget: "string" }
+
+  - name: "projects"
+    label: "Projeler"
+    files:
+      - name: "project-list"
+        label: "Proje Listesi"
+        file: "content/projects.json"
+        format: "json"
+        fields:
+          - label: "Projeler"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}} · {{fields.location}}"
+            fields:
+              - { label: "Proje Adı", name: "title", widget: "string" }
+              - { label: "URL Kısa Adı", name: "slug", widget: "string" }
+              - { label: "Konum", name: "location", widget: "string" }
+              - { label: "İlçe", name: "district", widget: "string" }
+              - { label: "Mahalle", name: "neighborhood", widget: "string", required: false }
+              - label: "Durum"
+                name: "status"
+                widget: "select"
+                options: ["Devam Eden Proje", "Tamamlanan Proje"]
+              - { label: "Proje Kategorisi", name: "category", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
+              - { label: "İnşaat Alanı", name: "area", widget: "string", required: false }
+              - { label: "Yapı Tipi", name: "type", widget: "string" }
+              - { label: "Daire / Bağımsız Bölüm Sayısı", name: "units", widget: "number", value_type: "int", default: 0 }
+              - { label: "Proje Yılı", name: "year", widget: "string" }
+              - { label: "Kapak Fotoğrafı", name: "cover", widget: "image", required: false }
+              - label: "Galeri Fotoğrafları"
+                name: "gallery"
+                widget: "list"
+                required: false
+                field: { label: "Fotoğraf", name: "image", widget: "image" }
+
+  - name: "gallery"
+    label: "Galeri ve Videolar"
+    files:
+      - name: "gallery-items"
+        label: "YouTube Videoları"
+        file: "content/gallery.json"
+        format: "json"
+        fields:
+          - label: "Videolar"
+            name: "videos"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "string" }
+              - { label: "YouTube Embed URL", name: "url", widget: "string" }
+
+  - name: "catalogs"
+    label: "E-Kataloglar"
+    files:
+      - name: "catalog-list"
+        label: "Katalog Listesi"
+        file: "content/catalogs.json"
+        format: "json"
+        fields:
+          - label: "Kataloglar"
+            name: "catalogs"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Katalog Adı", name: "title", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
+              - { label: "PDF Dosyası", name: "file", widget: "file", required: false }
+              - { label: "Kapak Görseli", name: "cover", widget: "image", required: false }
+
+  - name: "faq"
+    label: "Sıkça Sorulan Sorular"
+    files:
+      - name: "faq-list"
+        label: "Soru ve Cevaplar"
+        file: "content/faq.json"
+        format: "json"
+        fields:
+          - label: "Sorular"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.question}}"
+            fields:
+              - { label: "Soru", name: "question", widget: "string" }
+              - { label: "Cevap", name: "answer", widget: "text" }
+
+  - name: "services"
+    label: "Hizmetler"
+    files:
+      - name: "service-list"
+        label: "Hizmet Listesi"
+        file: "content/services.json"
+        format: "json"
+        fields:
+          - label: "Hizmetler"
+            name: "services"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Hizmet Başlığı", name: "title", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
