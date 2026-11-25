@@ -1,0 +1,28 @@
+{
+  "services": [
+    {
+      "title": "Konut Projeleri",
+      "description": "İhtiyaç analizinden uygulama projesine, kaba yapıdan ince işlere kadar konut üretiminin her aşamasını bütüncül olarak ele alıyoruz."
+    },
+    {
+      "title": "Ticari Yapılar",
+      "description": "İş merkezleri, ofisler, mağazalar ve üretim alanları için kullanım kolaylığını gözeten çözümler geliştiriyoruz."
+    },
+    {
+      "title": "Anahtar Teslim İnşaat",
+      "description": "Projelendirme, tedarik, saha koordinasyonu ve teslim aşamalarını tek bir iş programında birleştiriyoruz."
+    },
+    {
+      "title": "Kentsel Dönüşüm",
+      "description": "Mevcut yapının ihtiyaçlarını ve yeni projenin olanaklarını değerlendirerek anlaşılır bir uygulama yol haritası oluşturuyoruz."
+    },
+    {
+      "title": "Taahhüt Hizmetleri",
+      "description": "İş kapsamını, kaynak planlamasını ve uygulama takvimini netleştiriyor; sahadaki süreçleri düzenli takip ediyoruz."
+    },
+    {
+      "title": "Altyapı ve Peyzaj",
+      "description": "Yapıların çevresiyle ilişkisini güçlendiren ulaşım, açık alan ve peyzaj düzenlemelerini bir arada ele alıyoruz."
+    }
+  ]
+}
