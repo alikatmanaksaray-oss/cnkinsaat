@@ -16,5 +16,12 @@
   "popupDescription": "Yeni yaşam alanımız hakkında detaylı bilgi alın.",
   "popupOfferLine1": "%30 PEŞİN",
   "popupOfferLine2": "KALANI 15 AY VADE",
-  "popupLink": "/projeler/camliyaka-45-konutlari"
+  "popupLink": "/projeler/camliyaka-45-konutlari",
+  "stats": {
+    "years": 28,
+    "projects": 40,
+    "customers": 1000,
+    "team": 15
+  },
+  "popupImage": "https://framerusercontent.com/screenshots/on-demand/71913032-e7d5-4670-9676-0de9db4c4507.jpg"
 }
