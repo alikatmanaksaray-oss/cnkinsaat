@@ -153,3 +153,17 @@ collections:
             fields:
               - { label: "Hizmet Başlığı", name: "title", widget: "string" }
               - { label: "Açıklama", name: "description", widget: "text" }
+
+  - name: "legal"
+    label: "Yasal Metinler"
+    files:
+      - name: "legal-pages"
+        label: "KVKK, Gizlilik ve Kullanım Şartları"
+        file: "content/legal.json"
+        format: "json"
+        fields:
+          - { label: "KVKK Aydınlatma Metni", name: "kvkk", widget: "text" }
+          - { label: "Gizlilik Politikası", name: "privacy", widget: "text" }
+          - { label: "Kullanım Şartları", name: "terms", widget: "text" }
+          - { label: "Hukuki Kontrol Gerekli", name: "reviewRequired", widget: "boolean" }
+          - { label: "Yayın Öncesi Not", name: "draftWarning", widget: "text" }
